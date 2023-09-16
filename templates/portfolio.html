@@ -1,0 +1,33 @@
+{% extends 'index.html' %}
+{% load static %}
+
+{% block title%}
+Portfolio
+{% endblock title %}
+
+{% block content %}
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+
+    <div class="container">
+        <div class="portfolio-item">
+            <img src="{% static '9 (1).png' %}" style="width: 500px" alt="Project 1">
+            <h2>Joke 1</h2>
+            <p>Description of Project 1 goes here.</p>
+        </div>
+        <div class="portfolio-item">
+            <img src="{% static '5.png' %}" style="width: 500px" alt="Project 2">
+            <h2>Joke 2</h2>
+            <p>Description of Project 2 goes here.</p>
+        </div>
+        <div class="portfolio-item">
+            <img src="{% static '8.png' %}" style="width: 500px" alt="Project 3">
+            <h2>Joke 3</h2>
+            <p>Description of Project 3 goes here.</p>
+        </div>
+    </div>
+
+{% endblock content %}
